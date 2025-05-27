@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100 900;
+}  
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+
+html {
+    font-family: 'Outfit', 'Young Serif', sans-serif;
+    font-size: 16px;
+}
+
+/* COMPOSITION */
+
+body {
+    display: flex;
+    min-width: 320px;
+    place-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;    
+}
+
+main {  
+    height: auto;
+    width: 320px;
+    margin: 0 auto;
+    padding-bottom: 25px;      
+}
+
+/* CLASSES 
+
+1. image-wrapper
+2. recipe-wrapper
+2.1. title-wrapper
+2.2. prep-wrapper
+2.3. ingredients-wrapper
+2.4. instructions-wrapper
+2.5. nutrition-wrapper
+
+*/
+
+.image-wrapper, img, .recipe-wrapper {
+    width: 320px;    
+}
+
+.title-wrapper, .prep-wrapper, 
+.ingredients-wrapper, .instructions-wrapper, 
+.nutrition-wrapper {
+    margin: auto 35px;    
+} 
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 14px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--white);  
+}
+
+
+
+
+/* UTILITIES */
+
+.prep-wrapper li, .ingredients-wrapper li, .instructions-wrapper li {
+    padding-left: 10px;    
+}
+
+.ingredients-wrapper ul, .instructions-wrapper ol {
+    padding-left: 20px;
+}
+
+
+/* BLOCKS */
+
+
+
+/* EXCEPTIONS */
+
+
