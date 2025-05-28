@@ -30,7 +30,7 @@ html {
     font-size: 16px;
 }
 
-/* COMPOSITION */
+/* ------  COMPOSITION   ------ */
 
 body {
     display: flex;
@@ -45,7 +45,7 @@ main {
     height: auto;
     width: 320px;
     margin: 0 auto;
-    padding-bottom: 25px;      
+    padding-bottom: 35px;      
 }
 
 /* CLASSES 
@@ -67,7 +67,7 @@ main {
 .title-wrapper, .prep-wrapper, 
 .ingredients-wrapper, .instructions-wrapper, 
 .nutrition-wrapper {
-    margin: auto 35px;    
+    margin: auto 22px;       
 } 
 
 footer {
@@ -82,21 +82,106 @@ footer {
 
 
 
-/* UTILITIES */
+/*------  UTILITIES  ------*/
 
 .prep-wrapper li, .ingredients-wrapper li, .instructions-wrapper li {
     padding-left: 10px;    
 }
 
 .ingredients-wrapper ul, .instructions-wrapper ol {
-    padding-left: 20px;
+    padding-left: 25px;    
+}
+
+.rose-bg {
+    background-color: var(--rose-50);
+}
+
+.title-text {
+    color: var(--stone-900);
+}
+
+.title-text2 {
+    color: var(--brown-800);
+}
+
+.title-mf {
+    font-size: 2rem;
+    font-family: 'Young Serif';
+}
+
+.title-f {
+    font-size: 1.75rem;
+    font-family: 'Young Serif';
+}
+
+.pointer {
+    font-weight: 800;
 }
 
 
-/* BLOCKS */
+
+/*-------  BLOCKS  -------*/
+
+p, li {
+    line-height: 1.55;
+}
+
+.prep-wrapper {       
+    padding: 5px;
+}
+
+.prep-title {
+    color: var(--rose-800);
+    font-weight: bold;
+    font-size: 1.25em;
+    padding-left: 15px;
+    margin-top: 7px;     
+}
+
+.prep-wrapper ul {
+    margin-top: -15px;
+}
+
+.prep-wrapper li {
+    margin-top: 5px;
+}
+
+
+/* INGREDIENTS & INSTRUCTIONS */
+
+
+.ingredients-wrapper li, .instructions-wrapper li {
+    margin-top: 5px;        
+}
+
+
+.separator {
+    border: 1px solid var(--stone-150);
+    margin: 35px 22px;
+}
+
+
+/* NUTRITION */
+
+th {
+    font-weight: 400;
+}
+
+td {
+    font-weight: 800;
+    color: var(--brown-800);
+}
+
+
+th, td {
+    border-bottom: 1px solid var(--stone-150);
+    padding: 10px 35px;
+}
 
 
 
-/* EXCEPTIONS */
+
+
+/*------  EXCEPTIONS  ------*/
 
 
