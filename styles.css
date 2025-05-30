@@ -107,6 +107,8 @@ footer {
 .title-mf {
     font-size: 2rem;
     font-family: 'Young Serif';
+    font-weight: 500;
+    line-height: 1;
 }
 
 .title-f {
@@ -116,6 +118,11 @@ footer {
 
 .pointer {
     font-weight: 800;
+}
+
+.center {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
@@ -139,11 +146,12 @@ p, li {
 }
 
 .prep-wrapper ul {
-    margin-top: -15px;
+    margin-top: -13px;
 }
 
 .prep-wrapper li {
     margin-top: 5px;
+    margin-left: 2px;
 }
 
 
@@ -175,7 +183,7 @@ td {
 
 th, td {
     border-bottom: 1px solid var(--stone-150);
-    padding: 10px 35px;
+    padding: 10px 40px;
 }
 
 
@@ -185,3 +193,109 @@ th, td {
 /*------  EXCEPTIONS  ------*/
 
 
+.ingredients-wrapper li::marker, .instructions-wrapper li::marker {
+    color: var(--brown-800);
+    font-weight: 800;
+}
+
+.prep-wrapper li::marker {
+    color: var(--rose-800);
+}
+
+
+@media screen and (min-width: 375px) {    
+    
+    main, .image-wrapper, img, .recipe-wrapper {
+        min-width: 375px;
+    }
+
+    .title-wrapper, .prep-wrapper, 
+    .ingredients-wrapper, .instructions-wrapper, 
+    .nutrition-wrapper {
+        margin: auto 32px;       
+    }
+    
+    .separator {
+        margin: 35px 30px;
+    }
+
+    .title-mf {
+        font-size: 2.25rem;
+        font-weight: 500;
+        line-height: 1;
+    } 
+
+    .prep-wrapper {        
+        margin-top: 30px;
+        padding-top: 12px;        
+    }    
+       
+
+    .prep-wrapper li {        
+        margin-right: 25px !important;  
+    }
+
+    th, td {
+        padding: 10px 48px;
+    }
+
+}
+
+/*  media query for 768  */
+
+
+@media screen and (min-width: 1440px) {
+    
+    body {
+        background-color: var(--stone-150);
+    }
+
+    main {             
+        width: 550px;           
+        margin: 50px auto;                   
+    }
+
+    .full-recipe-wrapper {
+        height: auto;
+        width: 550px;
+        margin-top: 25px;
+        padding-top: 2px;
+        padding-bottom: 25px;
+        background-color: var(--white);
+        border-radius: 20px;       
+    }
+
+    .image-wrapper {
+        margin: 25px 25px 0 25px;
+    }
+
+    .image-wrapper {
+        width: 500px;
+        height: auto;                       
+        border-radius: 10px;             
+    }
+
+    .image-wrapper img {        
+        object-fit: fill;        
+        width: 100%;
+        height: 100%;
+        border-radius: 10px; 
+    }
+
+    .recipe-wrapper { 
+        margin: auto 25px;      
+        width: 500px;             
+    }   
+
+    .title-wrapper, .prep-wrapper, 
+    .ingredients-wrapper, .instructions-wrapper, 
+    .nutrition-wrapper {
+        margin: auto 0;        
+        width: 500px;       
+    }
+
+    
+
+
+
+}
