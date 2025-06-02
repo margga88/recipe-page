@@ -125,6 +125,14 @@ footer {
     vertical-align: middle;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 
 
 /*-------  BLOCKS  -------*/
@@ -186,6 +194,10 @@ th, td {
     padding: 10px 40px;
 }
 
+.last-row th, .last-row td {
+    border-bottom: none;
+}
+
 
 
 
@@ -201,6 +213,8 @@ th, td {
 .prep-wrapper li::marker {
     color: var(--rose-800);
 }
+
+
 
 
 @media screen and (min-width: 375px) {    
@@ -247,17 +261,21 @@ th, td {
 @media screen and (min-width: 1440px) {
     
     body {
-        background-color: var(--stone-150);
+        background-color: var(--stone-100);
     }
 
     main {             
-        width: 550px;           
-        margin: 50px auto;                   
+        width: 720px;           
+        margin: 100px auto;                   
+    }
+
+    footer {
+        background-color: var(--stone-100);
     }
 
     .full-recipe-wrapper {
         height: auto;
-        width: 550px;
+        width: 720px;
         margin-top: 25px;
         padding-top: 2px;
         padding-bottom: 25px;
@@ -266,11 +284,11 @@ th, td {
     }
 
     .image-wrapper {
-        margin: 25px 25px 0 25px;
+        margin: 35px 35px 0 35px;
     }
 
     .image-wrapper {
-        width: 500px;
+        width: auto;
         height: auto;                       
         border-radius: 10px;             
     }
@@ -283,18 +301,64 @@ th, td {
     }
 
     .recipe-wrapper { 
-        margin: auto 25px;      
-        width: 500px;             
+        margin: auto 35px;      
+        width: 650px;             
     }   
 
     .title-wrapper, .prep-wrapper, 
     .ingredients-wrapper, .instructions-wrapper, 
     .nutrition-wrapper {
-        margin: auto 0;        
-        width: 500px;       
+        margin: 0 auto;       
+        width: 650px;       
     }
 
+    .title-wrapper {
+        padding-bottom: 7px;
+    }
+
+    .prep-wrapper {
+        padding: 7px 0;         
+    }
+
+    .prep-wrapper p, .prep-wrapper ul {
+        margin-left: 15px;
+    }
+
+
+    /* UTILITIES */
+
+    .title-mf {
+        font-size: 2.5rem;               
+    }
+
+
+    /* BLOCKS */
+
+    .title-text {
+        margin-bottom: 20px;
+
+    }
+
+    .title-wrapper p {
+        margin-top: 0px;
+    }
+
+    .separator {
+        margin: 35px 0;
+    }
     
+    table {              
+        width: 650px;
+        text-align: left;       
+    }
+
+    th {
+        padding: 12px 30px;
+    }
+
+    td {
+        padding: 12px -35px;
+    }  
 
 
 
