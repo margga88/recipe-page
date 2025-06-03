@@ -221,7 +221,7 @@ th, td {
     
     main, .image-wrapper, img, .recipe-wrapper {
         min-width: 375px;
-    }
+    } 
 
     .title-wrapper, .prep-wrapper, 
     .ingredients-wrapper, .instructions-wrapper, 
@@ -255,18 +255,15 @@ th, td {
 
 }
 
-/*  media query for 768  */
-
-
-@media screen and (min-width: 1440px) {
-    
+@media screen and (min-width: 600px) {
+     
     body {
         background-color: var(--stone-100);
     }
 
     main {             
-        width: 720px;           
-        margin: 100px auto;                   
+        width: 550px;           
+        margin: 0 auto;                   
     }
 
     footer {
@@ -275,7 +272,7 @@ th, td {
 
     .full-recipe-wrapper {
         height: auto;
-        width: 720px;
+        width: 550px;
         margin-top: 25px;
         padding-top: 2px;
         padding-bottom: 25px;
@@ -302,14 +299,14 @@ th, td {
 
     .recipe-wrapper { 
         margin: auto 35px;      
-        width: 650px;             
+        width: 470px;             
     }   
 
     .title-wrapper, .prep-wrapper, 
     .ingredients-wrapper, .instructions-wrapper, 
     .nutrition-wrapper {
         margin: 0 auto;       
-        width: 650px;       
+        width: 470px;       
     }
 
     .title-wrapper {
@@ -328,16 +325,19 @@ th, td {
     /* UTILITIES */
 
     .title-mf {
-        font-size: 2.5rem;               
+        font-size: 1.9rem;               
     }
-
-
-    /* BLOCKS */
+    
+    .title-f {
+        font-size: 1.65rem;
+    }
 
     .title-text {
         margin-bottom: 20px;
-
     }
+
+    /* BLOCKS */
+
 
     .title-wrapper p {
         margin-top: 0px;
@@ -348,7 +348,7 @@ th, td {
     }
     
     table {              
-        width: 650px;
+        width: 470px;
         text-align: left;       
     }
 
@@ -358,8 +358,45 @@ th, td {
 
     td {
         padding: 12px -35px;
+    }     
+
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+        margin: 60px auto;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {   
+
+    main {             
+        width: 720px;           
+        margin: 100px auto;                   
+    }   
+
+    .full-recipe-wrapper {        
+        width: 720px;             
+    } 
+
+    .title-wrapper, .recipe-wrapper, .prep-wrapper, 
+    .ingredients-wrapper, .instructions-wrapper, 
+    .nutrition-wrapper {             
+        width: 650px;       
     }  
 
+    .title-mf {
+        font-size: 2.5rem;               
+    }
 
+    .title-f {
+        font-size: 1.75rem;
+    }
+    
+    table {              
+        width: 650px;              
+    }
 
 }
